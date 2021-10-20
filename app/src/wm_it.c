@@ -9,12 +9,9 @@ __attribute__((isr)) void CORET_IRQHandler(void)
 	HAL_IncTick();
 }
 
-__attribute__((isr)) void GPIOA_IRQHandler(void)
-{
- 	HAL_GPIO_EXTI_IRQHandler(GPIOA, GPIO_PIN_0);
-}
+extern UART_HandleTypeDef huart1;
 
-__attribute__((isr)) void GPIOB_IRQHandler(void)
+__attribute__((isr)) void UART1_IRQHandler(void)
 {
-	HAL_GPIO_EXTI_IRQHandler(GPIOB, GPIO_PIN_5);
+	HAL_UART_IRQHandler(&huart1);
 }

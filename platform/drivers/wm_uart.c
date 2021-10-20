@@ -242,7 +242,7 @@ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData,
 		return HAL_BUSY;
 	}
 }
-
+//	中断服务函数
 void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
 {
 	uint32_t isrflags   = READ_REG(huart->Instance->INTS);

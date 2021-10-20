@@ -1,4 +1,5 @@
-Obj/src_main.o: ../../../../../../../app/src/main.c \
+Obj/src_fifo.o: ../../../../../../../app/src/fifo.c \
+ ../../../../../../../app/src/fifo.h \
  ../../../../../../../include/driver/wm_hal.h \
  ../../../../../../../include/wm_type_def.h \
  ../../../../../../../include/wm_regs.h \
@@ -20,8 +21,9 @@ Obj/src_main.o: ../../../../../../../app/src/main.c \
  ../../../../../../../include/driver/wm_pmu.h \
  ../../../../../../../include/driver/wm_spi_flash.h \
  ../../../../../../../include/driver/wm_i2c.h \
- ../../../../../../../include/driver/wm_touch.h \
- ../../../../../../../app/src/fifo.h
+ ../../../../../../../include/driver/wm_touch.h
+
+../../../../../../../app/src/fifo.h:
 
 ../../../../../../../include/driver/wm_hal.h:
 
@@ -66,5 +68,3 @@ Obj/src_main.o: ../../../../../../../app/src/main.c \
 ../../../../../../../include/driver/wm_i2c.h:
 
 ../../../../../../../include/driver/wm_touch.h:
-
-../../../../../../../app/src/fifo.h:

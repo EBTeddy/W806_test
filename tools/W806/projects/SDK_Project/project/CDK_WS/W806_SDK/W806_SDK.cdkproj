@@ -185,6 +185,7 @@
       <File Name="../../../../../../../app/src/wm_it.c">
         <FileOption/>
       </File>
+      <File Name="../../../../../../../app/src/fifo.c"/>
     </VirtualDirectory>
     <VirtualDirectory Name="inc">
       <File Name="../../../../../../../app/inc/wm_it.h">
